@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/Bmi/BmiResult.dart';
 
-class BmiMain extends StatefulWidget {
+class BmiPage extends StatefulWidget {
   @override
-  _BmiMainState createState() => _BmiMainState();
+  _BmiPageState createState() => _BmiPageState();
 }
 
-class _BmiMainState extends State<BmiMain> {
+class _BmiPageState extends State<BmiPage> {
   final _formKey = GlobalKey<FormState>(); // 폼의 상태를 얻기 위한 키
   final _heightController = TextEditingController();
   final _weightController = TextEditingController();
@@ -21,7 +21,7 @@ class _BmiMainState extends State<BmiMain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('비만도 계산기')),
+      appBar: AppBar(title: Text('BMI 계산기')),
       body: Container(
         padding: const EdgeInsets.all(16.0),
         child: Form(
