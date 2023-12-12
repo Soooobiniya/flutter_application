@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/Bmi/BmiMain.dart';
 import 'package:flutter_application/StopWatch/StopWatchMain.dart';
+import 'package:flutter_application/Todo/TodoMain.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +30,7 @@ class _MenuPageState extends State<MenuPage> {
   var _pages = [
     BmiPage(),
     StopWatchPage(),
-    BmiPage(),
+    TodoListPage(),
   ];
 
   @override
