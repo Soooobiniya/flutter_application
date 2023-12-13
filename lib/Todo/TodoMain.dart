@@ -72,9 +72,9 @@ class _TodoListPageState extends State<TodoListPage> {
         todo.title, // 할 일
         style: todo.isDone // 완료일 때는 스타일 적용
             ? TextStyle(
-                decoration: TextDecoration.lineThrough, // 취소선
-                fontStyle: FontStyle.italic, // 이탤릭체
-              )
+          decoration: TextDecoration.lineThrough, // 취소선
+          fontStyle: FontStyle.italic, // 이탤릭체
+        )
             : null, // 아무 스타일도 적용 인 힘
       ),
       trailing: IconButton(

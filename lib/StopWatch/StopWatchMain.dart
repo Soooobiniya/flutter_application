@@ -9,7 +9,7 @@ class StopWatchPage extends StatefulWidget {
 }
 
 class _StopWatchPageState extends State<StopWatchPage> {
-  late Timer _timer; // 타이머
+  Timer? _timer; // 타이머
   var _time = 0; // 0.01초마다 1씩 증가시킬 정수형 변수
   var _isRunning = false; // 현재 시작 상태를 나타낼 불리언 변수
 
@@ -132,7 +132,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
 
   // 1/100초에 한 번씩 time 변수를 1 증가
   void _start() {
-    _timer = Timer.periodic(Duration(milliseconds: 10), (timer) {
+    _timer ??= Timer.periodic(Duration(milliseconds: 10), (timer) {
       setState(() {
         _time++;
       });
